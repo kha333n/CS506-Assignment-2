@@ -1,17 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package WebDesignAssignment;
 
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author kha33
- */
+
 public class GUI extends javax.swing.JFrame {
     
     private ArrayList<Product> products = new ArrayList<>();
@@ -126,16 +119,14 @@ public class GUI extends javax.swing.JFrame {
 	private void developerInfo(){
 		dbHelper.saveProducts(products);
 		JOptionPane.showMessageDialog(jPanel1,
-				"Usman Khan (BC190201004)",
+				"Rafiq ur Rehman (mc190205061)",
 				"Developed By",
 				JOptionPane.INFORMATION_MESSAGE);
 
 	}
 
 
-    /**
-     * Creates new form GUI
-     */
+    
     public GUI() {
 
         //If database connectivity successful then open program else close with message...
@@ -238,14 +229,6 @@ public class GUI extends javax.swing.JFrame {
 
         Headding.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
         Headding.setText("BookShop Cart");
-        Headding.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                HeaddingMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                HeaddingMouseExited(evt);
-            }
-        });
 
         placeOrderButton.setFont(new java.awt.Font("Ebrima", 0, 36)); // NOI18N
         placeOrderButton.setText("Place Order");
@@ -301,7 +284,7 @@ public class GUI extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel2)
                                     .addComponent(jLabel3))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 501, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel10)
                                     .addComponent(jLabel11))
@@ -312,7 +295,7 @@ public class GUI extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 501, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel12)
                         .addGap(28, 28, 28)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -495,10 +478,6 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(87, 87, 87)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel16)
-                        .addGap(18, 18, 18)
-                        .addComponent(handoutsTotalPrice))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel17)
                         .addGap(18, 18, 18)
                         .addComponent(refBookTotalPrice))
@@ -512,8 +491,12 @@ public class GUI extends javax.swing.JFrame {
                                 .addComponent(DVDTotalPrice))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                                 .addGap(14, 14, 14)
-                                .addComponent(USBTotalPrice)))))
-                .addContainerGap(140, Short.MAX_VALUE))
+                                .addComponent(USBTotalPrice))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel16)
+                        .addGap(18, 18, 18)
+                        .addComponent(handoutsTotalPrice)))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -561,20 +544,20 @@ public class GUI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
                             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 78, Short.MAX_VALUE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(268, 268, 268)
-                        .addComponent(Headding)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                            .addGap(38, 38, 38))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addContainerGap(91, Short.MAX_VALUE))))
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(Headding)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
             .addGroup(layout.createSequentialGroup()
                 .addGap(60, 60, 60)
                 .addComponent(placeOrderButton, javax.swing.GroupLayout.PREFERRED_SIZE, 548, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -681,7 +664,15 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_handoutsMinusButtonActionPerformed
 
     private void handoutsPlusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_handoutsPlusButtonActionPerformed
-        Product p = products.get(0);
+        Product p = new Product();
+        try{
+            p = products.get(0);
+        }
+        catch (Exception e){
+            JOptionPane.showMessageDialog(this,"No Product in Database",
+                    "Inventory Error",JOptionPane.WARNING_MESSAGE);
+            System.exit(0);
+        }
         if (p.getQuantity() < 1) {
             JOptionPane.showMessageDialog(jPanel1,"No more items in inventory",
                     "Nothing found",JOptionPane.WARNING_MESSAGE);
@@ -763,14 +754,6 @@ public class GUI extends javax.swing.JFrame {
             calculateTotal(p.getPrice(),GUI.ADD_ITEM);
         }
     }//GEN-LAST:event_USBPlusButtonActionPerformed
-
-    private void HeaddingMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HeaddingMouseEntered
-            Headding.setText("Usman Khan (BC190201004)");
-    }//GEN-LAST:event_HeaddingMouseEntered
-
-    private void HeaddingMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HeaddingMouseExited
-        Headding.setText("BookShop Cart");
-    }//GEN-LAST:event_HeaddingMouseExited
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         restoreState();
